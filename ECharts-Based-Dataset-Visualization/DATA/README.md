@@ -1,1 +1,0 @@
-本实验采用UCI Machine Learning Repository提供的Automobile数据集
