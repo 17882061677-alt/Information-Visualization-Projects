@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>汽车多维性能平行坐标可视化</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <h1>汽车多维性能平行坐标可视化</h1>
+    <p class="intro">
+      每条折线代表一辆汽车，可按车型筛选并比较其价格、动力、油耗与车身尺寸。
+    </p>
+
+    <section class="control-card">
+      <div>
+        <h2>车型筛选</h2>
+        <div id="category-controls"></div>
+      </div>
+      <button id="reset-button">重置筛选</button>
+    </section>
+
+    <section class="chart-card">
+      <div id="status">正在读取数据……</div>
+      <div id="chart"></div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="app.js"></script>
+</body>
+</html>
